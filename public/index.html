@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Todos App</title>
+    <link href='/styles/styles.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">To-do App</h1>
+            <h2 class="header__subtitle">Get Organised.</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container">
+            <input id='search-text' class='input' type='text' placeholder='Search..'>
+            <label class='checkbox'>
+                <input id='completed' type='checkbox'>Hide Completed Todos
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Dynamic Rendering -->
+        <div id='todos'>
+
+        </div>
+        <form id='add-todo'>
+            <input type='text' class='input' placeholder='Enter a task' name='addTodo'>
+            <button class='button'>Add</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <script src='/scripts/bundle.js'></script>
+</footer>
+</html>
